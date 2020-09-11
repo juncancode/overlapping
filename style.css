@@ -1,0 +1,55 @@
+html,body {
+    height:100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size:62.5%;
+    background:rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    --overlap:5rem;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+header {
+    background:#2c6733;
+    color:#fff;
+    font-size:3.5rem;
+    text-align:center;
+    padding:2rem 2rem var(--overlap) 2rem;
+}
+
+main {
+    width:50%;
+    justify-self: center;
+    display:grid;
+    place-items:center;
+    margin:auto;
+    margin:calc(var(--overlap) * -1) auto;
+    padding:2rem;
+    background:#fff;
+    border-radius:10px;
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+main h2 {
+    font-size:3rem;
+}
+
+main p {
+    font-size:1.5rem;
+}
+
+footer {
+    background:#2c6733;
+    font-size:2rem;
+    color:#fff;
+    padding:0.5rem 0;
+    text-align:center;
+}
